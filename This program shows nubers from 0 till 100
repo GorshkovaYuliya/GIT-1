@@ -6,8 +6,11 @@ public class Counting {
       float a=i%3;
       int N=i/3;
       if (a==0){
-        i=3*N;
-      }System.out.println(i);
+        System.out.println("3* " + N);
+      }
+      else{
+        System.out.println(i);
+      }
     }
   }
 }
