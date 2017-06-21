@@ -1,4 +1,3 @@
-
 public class Counting {
   public static void main(String[] args) {
     System.out.println("This program shows numbers from 0 till 100");
@@ -13,4 +12,4 @@ public class Counting {
   }
 }
   
-
+  
