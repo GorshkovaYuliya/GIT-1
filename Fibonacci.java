@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class Fibonacci {
   public static void main(String[] args) {
     System.out.println("This programm checks your number if this is non-negative Fibonacci number");
-    System.out.println("Enter the  number of the line");
+    System.out.println("Enter integer and positive number of the line");
     Scanner in = new Scanner(System.in);
-    int checkFib = in.nextInt();
+    double checkFib = in.nextDouble();
     double fibNumb = 0;
     int i = 0;
     while (fibNumb < checkFib) {
