@@ -5,15 +5,15 @@ public class Fibonacci {
     System.out.println("This programm checks your number if this is non-negative Fibonacci number");
     System.out.println("Enter the  number of the line");
     Scanner in = new Scanner(System.in);
-    int CheckFib = in.nextInt();
-    double FibNumb = 0;
+    int checkFib = in.nextInt();
+    double fibNumb = 0;
     int i = 0;
-    while (FibNumb < CheckFib) {
-      double OperationSqrt = Math.sqrt(5);
-      double UseSqrt = (1 + OperationSqrt) / 2;
-      FibNumb = Math.round(Math.pow(UseSqrt, i) / OperationSqrt);
+    while (fibNumb < checkFib) {
+      final double operationSqrt = Math.sqrt(5);
+      double useSqrt = (1 + operationSqrt) / 2;
+      fibNumb = Math.round(Math.pow(useSqrt, i) / operationSqrt);
       i++;
-    } if (CheckFib == FibNumb && CheckFib >= 0) {
+    } if (checkFib == fibNumb && checkFib >= 0) {
       System.out.println("This number belongs to positive Fibonacci line");
     } else {
       System.out.println("This is not positive Fibonacci number");
