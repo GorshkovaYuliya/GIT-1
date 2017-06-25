@@ -17,7 +17,8 @@ public class Sequence {
       if (seqNumb.get(numb + 1) < seqNumb.get(numb)) {
         System.out.println("This is not non-decreasing sequence");
         break;
-      } else if (numb == seqNumb.size() - 2) {
+      } else
+        if (numb == seqNumb.size() - 2) {
         System.out.println("This is non-decreasing sequence");
       }
     }
