@@ -13,7 +13,8 @@ public class Fibonacci {
       double useSqrt = (1 + operationSqrt) / 2;
       fibNumb = Math.round(Math.pow(useSqrt, i) / operationSqrt);
       i++;
-    } if (checkFib == fibNumb && checkFib >= 0) {
+    } 
+    if (checkFib == fibNumb && checkFib >= 0) {
       System.out.println("This number belongs to positive Fibonacci line");
     } else {
       System.out.println("This is not positive Fibonacci number");
