@@ -11,10 +11,12 @@ public class SequenceModifided {
       String[] sequenceStringDivided = sequenceString.split(" ");
       determineSequence(sequenceStringDivided);
     }
-  }  
+  }
+  
   /** 
    * This method determines if the sequence is non-decreasing or not
    * and puts the answer to the console.
+   * @param sequenceStringDivided accepts a user-entered string 
    */
   public static void determineSequence(String[] sequenceStringDivided) {
     try {
