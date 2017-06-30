@@ -8,7 +8,7 @@ public class AnalizeSequence {
    * and puts the answer to the console.
    *
    * @param sequenceStringDivided checking sequence
-   * @exception NumberFormatException if e put a wrong symbol
+   * @exception NumberFormatException if e puts not integer numbers 
    */
   public void determineSequence(String[] sequenceStringDivided) {
     try {
