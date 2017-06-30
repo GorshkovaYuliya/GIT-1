@@ -1,5 +1,5 @@
 /**  
- * This class analize your sequence if it is non-decreasing
+ * This class analize your sequence if it is non-decreasing.
  */
 public class AnalizeSequence {
 
