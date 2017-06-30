@@ -6,6 +6,7 @@ public class AnalizeSequence {
   /**
    * This method determines if the sequence is non-decreasing or not
    * and puts the answer to the console.
+   *
    * @param sequenceStringDivided checking sequence
    */
   public void determineSequence(String[] sequenceStringDivided) {
