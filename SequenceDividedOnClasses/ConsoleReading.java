@@ -9,7 +9,7 @@ public class ConsoleReading {
    * This method read sequence enered by user and
    * divided it on separate symbols.
    *
-   *@return sequenceStringDivided entered and divided sequence.
+   *@return sequenceStringDivided entered and divided sequence
    */
   public String[] readConsole () {
     Scanner scanner = new Scanner(System.in);
