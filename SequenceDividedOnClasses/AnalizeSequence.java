@@ -27,7 +27,7 @@ public class AnalizeSequence {
    * @return true if the sequence is non-decreasing
    */
   public boolean determineSequence(String[] sequenceStringDivided) {
-	  for (int i = 0; i < sequenceStringDivided.length - 1 ; i++) {
+    for (int i = 0; i < sequenceStringDivided.length - 1; i++) {
       if (Integer.parseInt(sequenceStringDivided[i]) > Integer.parseInt(sequenceStringDivided[i + 1])) {         
         return false;
       }
