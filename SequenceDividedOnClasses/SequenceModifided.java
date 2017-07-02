@@ -12,7 +12,12 @@ public class SequenceModifided {
     ConsoleReading consoleRead = new ConsoleReading();
     String[] line = consoleRead.readConsole();
     if (args.length != 0) {
-      sequenceCheck.determineSequence(line);
+      sequenceCheck.checkingSequenceOnMistakes(line);
+	    if (sequenceCheck.determineSequence(line)) {
+	      System.out.println("Your sequence is non-decreasing");
+	    } else {
+	      System.out.println("Your sequence is not non-decreasing");  
+	    } 
     } else {
       consoleRead.readConsole();
     }
