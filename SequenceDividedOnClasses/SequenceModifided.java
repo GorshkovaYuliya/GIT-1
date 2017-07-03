@@ -12,12 +12,13 @@ public class SequenceModifided {
     ConsoleReading consoleRead = new ConsoleReading();
     String[] line = consoleRead.readConsole();
     if (args.length != 0) {
-      sequenceCheck.checkingSequenceOnMistakes(line);
-      if (sequenceCheck.determineSequence(line)) {
-        System.out.println("Your sequence is non-decreasing");
-      } else {
+      if(sequenceCheck.checkingSequenceOnNumbers(line) == true) {
+        if (sequenceCheck.determineSequence(line)) {
+          System.out.println("Your sequence is non-decreasing");
+        } else {
 	System.out.println("Your sequence is not non-decreasing");  
-      } 
+        }
+      }
     } else {
       consoleRead.readConsole();
     }
