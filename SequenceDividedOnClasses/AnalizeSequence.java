@@ -4,19 +4,23 @@
 public class AnalizeSequence {
 
   /**
-   * This method  check entered sequence on mistakes
+   * This method  check entered sequence if all symbols are numbers
    *
    * @param sequenceStringDivided checking sequence
-   * @exception NumberFormatException if e puts not integer numbers 
+   * @exception NumberFormatException if e puts not integer numbers
+   * @return false if there is not only numbers
+   * @return true if the sequence consists only of numbers
    */
-  public void checkingSequenceOnMistakes(String[] sequenceStringDivided) {
+  public boolean checkingSequenceOnInteger(String[] sequenceStringDivided) {
     try {
       for (int i = 0; i < sequenceStringDivided.length - 1; i++) { 
-        return;
+        Integer.parseInt(sequenceStringDivided[i]);
       }
     } catch (NumberFormatException e) {
       System.out.println("You entered a wrong symbol");
+      return false;
     }
+    return true;
   }
   
   /**
