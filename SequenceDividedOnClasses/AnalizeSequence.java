@@ -7,11 +7,11 @@ public class AnalizeSequence {
    * This method  check entered sequence if all symbols are numbers
    *
    * @param sequenceStringDivided checking sequence
-   * @exception NumberFormatException if e puts not integer numbers
+   * @exception NumberFormatException if e puts not numbers
    * @return false if there is not only numbers
    * @return true if the sequence consists only of numbers
    */
-  public boolean checkingSequenceOnInteger(String[] sequenceStringDivided) {
+  public boolean checkingSequenceOnNumbers(String[] sequenceStringDivided) {
     try {
       for (int i = 0; i < sequenceStringDivided.length - 1; i++) { 
         Integer.parseInt(sequenceStringDivided[i]);
