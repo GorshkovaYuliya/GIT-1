@@ -8,19 +8,16 @@
  */
 public class SequenceModifided {
   public static void main(String[] args) {
-    AnalizeSequence sequenceCheck = new AnalizeSequence();
     ConsoleReading consoleRead = new ConsoleReading();
-    String[] line = consoleRead.readConsole();
-    if (args.length != 0) {
-      if(sequenceCheck.checkingSequenceOnNumbers(line) == true) {
-        if (sequenceCheck.determineSequence(line)) {
-          System.out.println("Your sequence is non-decreasing");
-        } else {
-	System.out.println("Your sequence is not non-decreasing");  
-        }
-      }
-    } else {
-      consoleRead.readConsole();
+    CheckSequenceRecursive sequenceRecursive = new CheckSequenceRecursive();
+    sequenceRecursive.checkSequenceRecursive(args);
+    try {
+      for (int i = 4; i < args.length - 1 ; i++) { 
+        Integer.parseInt(args[i]);
+	return;
+       }
+    } catch(NumberFormatException e) { 
+        System.out.println("Wrong format of enetered line");
     }
   }
 }
