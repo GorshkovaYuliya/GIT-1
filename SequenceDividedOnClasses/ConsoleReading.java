@@ -16,7 +16,7 @@ public class ConsoleReading {
     System.out.println("Please, enter sequence and divide numbers by using space");
     String args = scanner.nextLine();
     CheckSequenceRecursive sequenceRecursive = new CheckSequenceRecursive();
-    sequenceRecursive.checkSequenceRecursive(args.split(" "));
+    sequenceRecursive.dissectSequenceRecursive(args.split(" "));
     return args;
   }
 }
