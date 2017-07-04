@@ -8,7 +8,7 @@ public class ConsoleReading {
   /**
    * This method read sequence enered by user
    *
-   *@return argumentsDivided entered sequence
+   * @return argumentsDivided entered sequence
    */
   public String readConsole () {
     Scanner scanner = new Scanner(System.in);
