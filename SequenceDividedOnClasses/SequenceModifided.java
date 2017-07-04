@@ -15,9 +15,9 @@ public class SequenceModifided {
       for (int i = 4; i < args.length - 1 ; i++) { 
         Integer.parseInt(args[i]);
 	return;
-       }
+      }
     } catch(NumberFormatException e) { 
-        System.out.println("Wrong format of enetered line");
+      System.out.println("Wrong format of enetered line");
     }
   }
 }
