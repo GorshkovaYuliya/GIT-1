@@ -1,8 +1,7 @@
 /**
- * This class check if the suequence is non-decreasing.
  * Pogramm propose user to enter sequence and suggest to enter again
- * if nothing was entered
- * the program requests a sequence from the console.
+ * if nothing was entered.
+ * Program analize entered sequence if it is non-decreasing
  *
  * @author Gorshkova Yuliya
  */
@@ -14,7 +13,7 @@ public class SequenceModifided {
     if (args.length <= 1) {
       sequenceForCheck = consoleRead.readConsole();
     }
-    while(sequenceForCheck.length <=1) {
+    while(sequenceForCheck.length <= 1) {
       System.out.println("You do not put enough values");
       sequenceForCheck = consoleRead.readConsole();
     }
@@ -25,7 +24,6 @@ public class SequenceModifided {
       } else {
         System.out.println("Your sequence is not non-decreasing");  
       }
-
     } catch (NumberFormatException e) { 
       System.out.println("Wrong format of enetered line");
     }
