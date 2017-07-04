@@ -12,7 +12,7 @@ public class ConsoleReading {
    */
   public String readConsole () {
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Please, enter sequence and divide numbers by using space");
+    System.out.println("Please, enter sequence more than one element and divide numbers by using space");
     String args = scanner.nextLine();
     String [] argumentsDivided = args.split(" ");
     return argumentsDivided ;
