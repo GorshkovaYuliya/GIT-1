@@ -10,9 +10,9 @@ public class AnalizeSequence {
    * @return false if the sequence is not non-decreasing
    * @return true if the sequence is non-decreasing
    */
-  public boolean determineSequence(String[] sequenceStringDivided) {
+  public boolean determineSequence(String[] args) {
     for (int i = 4; i < sequenceStringDivided.length - 1; i++) {
-      if (Integer.parseInt(sequenceStringDivided[i]) > Integer.parseInt(sequenceStringDivided[i + 1])) {         
+      if (Integer.parseInt(args[i]) > Integer.parseInt(args[i + 1])) {         
         return false;
       }
     } 
