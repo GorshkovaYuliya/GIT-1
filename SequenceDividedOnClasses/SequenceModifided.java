@@ -9,14 +9,24 @@
 public class SequenceModifided {
   public static void main(String[] args) {
     ConsoleReading consoleRead = new ConsoleReading();
-    CheckSequenceRecursive sequenceRecursive = new CheckSequenceRecursive();
-    sequenceRecursive.dissectSequenceRecursive(args);
+    AnalizeSequence sequenceCheck = new AnalizeSequence();
+    String[] sequenceForCheck = args;
+    if (args.length <= 1) {
+      sequenceForCheck = consoleRead.readConsole();
+    }
+    while(sequenceForCheck.length <=1) {
+      System.out.println("You do not put enough values");
+      sequenceForCheck = consoleRead.readConsole();
+    }
     try {
-      for (int i = 4; i < args.length - 1 ; i++) { 
-        Integer.parseInt(args[i]);
-	return;
+      sequenceCheck.determineSequence(sequenceForCheck);
+      if (sequenceCheck.determineSequence(sequenceForCheck) == true) {
+        System.out.println("Your sequence is non-decreasing");
+      } else {
+        System.out.println("Your sequence is not non-decreasing");  
       }
-    } catch(NumberFormatException e) { 
+
+    } catch (NumberFormatException e) { 
       System.out.println("Wrong format of enetered line");
     }
   }
