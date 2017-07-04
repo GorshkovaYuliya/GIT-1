@@ -10,7 +10,7 @@ public class SequenceModifided {
   public static void main(String[] args) {
     ConsoleReading consoleRead = new ConsoleReading();
     CheckSequenceRecursive sequenceRecursive = new CheckSequenceRecursive();
-    sequenceRecursive.checkSequenceRecursive(args);
+    sequenceRecursive.dissectSequenceRecursive(args);
     try {
       for (int i = 4; i < args.length - 1 ; i++) { 
         Integer.parseInt(args[i]);
