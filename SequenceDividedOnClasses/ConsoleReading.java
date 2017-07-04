@@ -9,13 +9,14 @@ public class ConsoleReading {
    * This method read sequence enered by user and
    * divided it on separate symbols.
    *
-   *@return sequenceStringDivided entered and divided sequence
+   *@return args entered sequence
    */
-  public String[] readConsole () {
+  public String readConsole () {
     Scanner scanner = new Scanner(System.in);
     System.out.println("Please, enter sequence and divide numbers by using space");
-    String sequenceString = scanner.nextLine();
-    String[] sequenceStringDivided = sequenceString.split(" ");
-    return sequenceStringDivided;
+    String args = scanner.nextLine();
+	  CheckSequenceRecursive sequenceRecursive = new CheckSequenceRecursive();
+	  sequenceRecursive.checkSequenceRecursive(args.split(" "));
+    return args;
   }
 }
