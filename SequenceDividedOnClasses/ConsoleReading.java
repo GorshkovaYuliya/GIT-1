@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ConsoleReading {
 
   /**
-   * This method read sequence enered by user and
+   * This method read sequence enered by user
    *
    *@return argumentsDivided entered sequence
    */
