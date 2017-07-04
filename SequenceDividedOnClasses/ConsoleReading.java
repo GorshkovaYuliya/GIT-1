@@ -7,16 +7,14 @@ public class ConsoleReading {
 
   /**
    * This method read sequence enered by user and
-   * divided it on separate symbols.
    *
-   *@return args entered sequence
+   *@return argumentsDivided entered sequence
    */
   public String readConsole () {
     Scanner scanner = new Scanner(System.in);
     System.out.println("Please, enter sequence and divide numbers by using space");
     String args = scanner.nextLine();
-    CheckSequenceRecursive sequenceRecursive = new CheckSequenceRecursive();
-    sequenceRecursive.dissectSequenceRecursive(args.split(" "));
-    return args;
+    String [] argumentsDivided = args.split(" ");
+    return argumentsDivided ;
   }
 }
