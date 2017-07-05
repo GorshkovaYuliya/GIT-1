@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * This class suggest user to enter  sequence.
+ * Reads sequence entered by a user from the console.
  */
 public class ConsoleReading {
 
