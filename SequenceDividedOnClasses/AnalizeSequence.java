@@ -28,13 +28,13 @@ public class AnalizeSequence {
    * @return true if the sequence consists only of numbers
    */
   public boolean determineIsSequensCorrect(String[] args) {
-	  for (String currentElementOfMassive: args) {
-		  for (int i = 0; i < currentElementOfMassive.length(); i++) { 
+    for (String currentElementOfMassive: args) {
+      for (int i = 0; i < currentElementOfMassive.length(); i++) { 
         if (!Character.isDigit(currentElementOfMassive.charAt(i))) { 
           return false; 
         } 
       } 
-  	}
+    }
     return true; 
   }
 }
