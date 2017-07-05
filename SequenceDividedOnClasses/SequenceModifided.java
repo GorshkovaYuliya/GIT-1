@@ -1,7 +1,7 @@
 /**
  * Pogramm propose user to enter sequence and suggest to enter again
- * if nothing was entered.
- * Program analize entered sequence if it is non-decreasing
+ * if nothing was entered or was entered wrong value.
+ * Program analize entered sequence if it is non-decreasing.
  *
  * @author Gorshkova Yuliya
  */
