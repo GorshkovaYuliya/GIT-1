@@ -1,5 +1,6 @@
 /**  
- * This class analize your sequence if it is non-decreasing.
+ * This class analize your sequence if it is non-decreasing
+ * and check if its elements are correct.
  */
 public class AnalizeSequence {
   
@@ -17,5 +18,23 @@ public class AnalizeSequence {
       }
     } 
     return true;
-  }  
+  } 
+  
+  /**
+   * This method determines if the sequence consists of correct elements
+   *
+   * @param args checking sequence
+   * @return false if the sequence has uncorrect symbols
+   * @return true if the sequence consists only of numbers
+   */
+  public boolean determineIsSequensCorrect(String[] args) {
+	  for (String currentElementOfMassive: args) {
+		  for (int i = 0; i < currentElementOfMassive.length(); i++) { 
+        if (!Character.isDigit(currentElementOfMassive.charAt(i))) { 
+          return false; 
+        } 
+      } 
+  	}
+    return true; 
+  }
 }
