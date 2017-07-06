@@ -9,9 +9,6 @@ public class SequenceModifided {
   public static void main(String[] args) {
     String[] sequenceForCheck = args;
     ConsoleReading consoleRead = new ConsoleReading();
-    if (args.length <= 1) {
-      sequenceForCheck = consoleRead.readConsole();
-    }
     while(sequenceForCheck.length <= 1 || !(sequenceCheck.determineIsSequensCorrect(sequenceForCheck))) {
       System.out.println("You do not put enough or entered impermissible values");
       sequenceForCheck = consoleRead.readConsole();
