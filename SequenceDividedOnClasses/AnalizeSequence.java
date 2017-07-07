@@ -8,7 +8,6 @@ public class AnalizeSequence {
    * This method determines if the sequence is non-decreasing or not
    *
    * @param args checking sequence
-   * @return false if the sequence is not non-decreasing
    * @return true if the sequence is non-decreasing
    */
   public boolean determineSequence(String[] args) {
@@ -24,7 +23,6 @@ public class AnalizeSequence {
    * This method determines if the sequence consists of correct elements
    *
    * @param args checking sequence
-   * @return false if the sequence has uncorrect symbols
    * @return true if the sequence consists only of numbers
    */
   public boolean determineIsSequensCorrect(String[] args) {
