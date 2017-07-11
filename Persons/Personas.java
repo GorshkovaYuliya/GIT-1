@@ -8,9 +8,9 @@ public class Personas {
   private int age;
   public Personas (String firstName, String secondName, String patronomic, int age) {
     this.firstName = firstName;
-	this.secondName = secondName;
-	this.patronomic = patronomic;
-	this.age = age;
+    this.secondName = secondName;
+    this.patronomic = patronomic;
+    this.age = age;
   }
   public void setAge(int age) {
     this.age = age;
@@ -35,8 +35,8 @@ public class Personas {
    */
   public boolean isAgeCorrect(int age) {
     if ((age < 0) || (age > 150) || (age % 1 != 0)) {
-	  return false;
-	}
-	return true;
+      return false;
+    }
+    return true;
   }
 }
