@@ -16,16 +16,16 @@ public class PersonsData {
       Personas[] person = new Personas[amountOfData];
       for (int i = 0; i < amountOfData; i++) {
         scanner.nextLine();
-	System.out.println("Eneter the firstname of the " + (i + 1) + " person:");
-	String firstNameOfPerson = scanner.nextLine();
-	System.out.println("Eneter the secondname of the " + (i + 1) + " person:");
-	String secondNameOfPerson = scanner.nextLine();
+        System.out.println("Eneter the firstname of the " + (i + 1) + " person:");
+        String firstNameOfPerson = scanner.nextLine();
+        System.out.println("Eneter the secondname of the " + (i + 1) + " person:");
+        String secondNameOfPerson = scanner.nextLine();
         System.out.println("Eneter the patronymic of the " + (i + 1) + " person:");
-	String patronomicOfPerson = scanner.nextLine();
+        String patronomicOfPerson = scanner.nextLine();
         System.out.println("Eneter the age of the " + (i + 1) + " person:");
         int ageOfPerson = scanner.nextInt();
 	person[i] = new Personas(firstNameOfPerson, secondNameOfPerson, patronomicOfPerson,ageOfPerson);
-	while (!(person[i].isAgeCorrect(ageOfPerson))) {
+        while (!(person[i].isAgeCorrect(ageOfPerson))) {
 	  System.out.println("You entered wrong values, plase enter again:");
 	  ageOfPerson = scanner.nextInt();
 	  person[i].setAge(ageOfPerson);
