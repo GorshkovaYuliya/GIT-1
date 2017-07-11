@@ -24,7 +24,7 @@ public class PersonsData {
         String patronomicOfPerson = scanner.nextLine();
         System.out.println("Eneter the age of the " + (i + 1) + " person:");
         int ageOfPerson = scanner.nextInt();
-	person[i] = new Personas(firstNameOfPerson, secondNameOfPerson, patronomicOfPerson,ageOfPerson);
+        person[i] = new Personas(firstNameOfPerson, secondNameOfPerson, patronomicOfPerson,ageOfPerson);
         while (!(person[i].isAgeCorrect(ageOfPerson))) {
 	  System.out.println("You entered wrong values, plase enter again:");
 	  ageOfPerson = scanner.nextInt();
