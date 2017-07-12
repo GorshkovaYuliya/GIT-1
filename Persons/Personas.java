@@ -50,7 +50,7 @@ public class Personas {
     return age;
   }
    
-  /*
+  /**
    * This metod check age value on correctness
    *
    * @return true if age value is correct, and false otherwise 
@@ -62,7 +62,7 @@ public class Personas {
     return true;
   }
   
-   /*
+  /**
    * This metod suggest user to enter data 
    *
    * @return personData name of entered data 
