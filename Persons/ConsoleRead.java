@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * This class reads the data of the person  from the console
  */
- public class ConsoleRead {
+public class ConsoleRead {
 
   /**
    * This method reads the  string data of the person  from the console
