@@ -43,7 +43,7 @@ public class PersonsData {
         }
       }
       System.out.println("Person data is : " );  
-	  System.out.println( person[i].getFirstName() + " " + person[i].getSecondName() + " " + person[i].getPatronomic() + " " + person[i].getAge());
+      System.out.println( person[i].getFirstName() + " " + person[i].getSecondName() + " " + person[i].getPatronomic() + " " + person[i].getAge());
     }
   }
 }
