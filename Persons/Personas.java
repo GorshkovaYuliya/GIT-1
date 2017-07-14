@@ -16,7 +16,7 @@ public class Personas {
    * @param patronomic is patronomic of person.
    * @param age is age of person.
    */
-  public Personas (String firstName, String secondName, String patronomic, String age) {
+  public Personas(String firstName, String secondName, String patronomic, String age) {
     this.firstName = firstName;
     this.secondName = secondName;
     this.patronomic = patronomic;
