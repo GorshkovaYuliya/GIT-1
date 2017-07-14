@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class ConsoleRead {
   public String consoleReading(String fieldName) {
     Scanner scanner = new Scanner(System.in);
-	  System.out.println(fieldName);
-	  return scanner.nextLine();
+    System.out.println(fieldName);
+    return scanner.nextLine();
   } 
 }
