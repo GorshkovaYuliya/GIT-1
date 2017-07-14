@@ -1,12 +1,12 @@
 import java.util.Scanner;
-/*
- * This class contains person's data
+/**
+ * This class contains person's data.
  */
 public class Personas {
   private String firstName;
   private String secondName;
   private String patronomic;
-  private int age;
+  private String age;
    
   /**
    * Constructor.
@@ -14,24 +14,25 @@ public class Personas {
    * @param firstName name of the person. 
    * @param secondName surname of the person.
    * @param patronomic is patronomic of person.
-   * @param age is age of person. Can take values from 0 till 150.
-   * And age value must be positive.
+   * @param age is age of person.
    */
-  public Personas (String firstName, String secondName, String patronomic, int age) {
+  public Personas (String firstName, String secondName, String patronomic, String age) {
     this.firstName = firstName;
     this.secondName = secondName;
     this.patronomic = patronomic;
-    this.age = age;
-    Scanner scanner = new Scanner(System.in);
-    while (!(isAgeCorrect(age))) {
-	    System.out.println("You entered wrong values, plase enter again:");
-		  age = scanner.nextInt();
-		  setAge(age);
-	  }
+    setAge(age);
   }
   
-  public void setAge(int age) {
+  /**
+   * Setter.
+   *
+   * @param age is age of person.
+   */
+  public void setAge(String age) {
     this.age = age;
+    while(!(isAgeCorrect(age))) {
+      throw new IllegalArgumentException();
+    }
   }
   
   public String getFirstName() {
@@ -46,29 +47,20 @@ public class Personas {
     return patronomic;
   }
   
-  public int getAge() {
+  public String getAge() {
     return age;
   }
    
   /**
-   * This metod check age value on correctness
+   * This metod check age value on correctness.
    *
-   * @return true if age value is correct, and false otherwise 
+   * @return true if age value if is positive
+   * and smaller than 150, otherwise returns false.   
    */
-  public boolean isAgeCorrect(int age) {
-    if ((age < 0) || (age > 150)) {
+  public boolean isAgeCorrect(String age) {
+    if ((Integer.parseInt(age) < 0) || (Integer.parseInt(age) > 150)) {
       return false;
     }
     return true;
-  }
-  
-  /**
-   * This metod suggest user to enter data 
-   *
-   * @return personData name of entered data 
-   */
-  public String getPersonData(String personData, int serialNumber) { 
-    System.out.println("Eneter the " + personData + " of the " + (serialNumber + 1) + " person:");
-    return personData;
-  }
+  } 
 }
