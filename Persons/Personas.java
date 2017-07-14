@@ -1,4 +1,3 @@
-import java.util.Scanner;
 /**
  * This class contains person's data.
  */
