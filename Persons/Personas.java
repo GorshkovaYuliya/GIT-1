@@ -54,7 +54,7 @@ public class Personas {
   /**
    * This metod check age value on correctness.
    *
-   * @return true if age value if is positive
+   * @return true if age value is positive
    * and smaller than 150, otherwise returns false.   
    */
   public boolean isAgeCorrect(String age) {
