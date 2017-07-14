@@ -15,7 +15,7 @@ public class PersonsData {
         amountOfDataInteger = Integer.parseInt(amountOfData);
         ifAmountOfDataCorrect = true;
         break;
-	    } catch (NumberFormatException e) {
+      } catch (NumberFormatException e) {
         System.out.println("Entered value is not number!");
         continue;
       }
@@ -34,7 +34,7 @@ public class PersonsData {
           person[i].setAge(ageOfPerson);
           ifAgeIsCorrect = true;
           break;
-	      } catch (NumberFormatException en) {
+        } catch (NumberFormatException en) {
           System.out.println("Entered value is not number!");
           continue;
         } catch (IllegalArgumentException ex) {
