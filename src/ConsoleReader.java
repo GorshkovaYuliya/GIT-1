@@ -41,4 +41,3 @@ public class ConsoleReader {
     return scanner.nextLine();
   }
 }
-
