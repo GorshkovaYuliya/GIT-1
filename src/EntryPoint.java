@@ -11,7 +11,6 @@ public class EntryPoint {
     BigDecimal[] sides = new BigDecimal[3];
     String answer = "";
     do {
-
       try {
         sides = consoleReader.consoleRead("Enter sides of the triangle, please");
         TriangleBuilder build = new EquilateralTriangleBuilder
