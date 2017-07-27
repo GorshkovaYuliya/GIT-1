@@ -13,8 +13,7 @@ public class EquilateralTriangle extends Triangle {
    */
   public EquilateralTriangle(BigDecimal[] sides) throws IllegalTriangleException, IllegalTypeTriangleException {
     super(sides);
-    if (isExistEquilateralTriangle(sides)) {
-    } else {
+    if (!ExistEquilateralTriangle(sides)) {
       throw new IllegalTypeTriangleException();
     }
   }
@@ -24,7 +23,7 @@ public class EquilateralTriangle extends Triangle {
    * @param sides handling sides entered by user
    * @return true if triangle is equilateral, false otherwise
    */
-  public boolean isExistEquilateralTriangle(BigDecimal[] sides) {
+  public boolean ExistEquilateralTriangle(BigDecimal[] sides) {
     if (!((sides[0].compareTo(sides[1]) == 0) && ((sides[0].compareTo(sides[2]) == 0)))) {
       return false;
     }
