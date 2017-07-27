@@ -6,6 +6,7 @@ import java.util.Scanner;
  */
 public class ConsoleReader {
   Scanner scanner =  new Scanner(System.in);
+  final String NEGATIVE_ANSWER = "No";
 
   /**
    * This method request user to enter Triangle sides from console.
@@ -18,6 +19,7 @@ public class ConsoleReader {
     for (int i = 0; i < 3; i++) {
       sides[i] = scanner.nextBigDecimal();
     }
+    scanner.nextLine();
     return sides;
   }
 
@@ -26,9 +28,8 @@ public class ConsoleReader {
    * @param answer entered by user parameter and means if program will stop or not.
    * @return true if answer isn't NO and false otherwise.
    */
-  public boolean isContinueEntering (String answer){
-    String negativeAnswer = "No";
-    return !answer.equals(negativeAnswer);
+  public boolean isContinueEntering (String answer) {
+    return !answer.equals(NEGATIVE_ANSWER);
   }
 
   /**
@@ -37,7 +38,6 @@ public class ConsoleReader {
    */
   public String askUserToContinue() {
     System.out.println("Enter <Yes> to continue, press < No > otherwise");
-    scanner =  new Scanner(System.in);
     return scanner.nextLine();
   }
 }
