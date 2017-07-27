@@ -4,6 +4,11 @@ import java.math.BigDecimal;
  * It tries to build ordinary triangle.
  */
 public class OrdinaryTriangleBuilder extends TriangleBuilder {
+  
+    /**
+   * Constructor.
+   * @param successor points to the next type of triangle
+   */
   public OrdinaryTriangleBuilder(TriangleBuilder successor) {
     this.successor = successor;
   }
