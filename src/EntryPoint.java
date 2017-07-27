@@ -13,8 +13,8 @@ public class EntryPoint {
     do {
       try {
         sides = consoleReader.consoleRead("Enter sides of the triangle, please");
-        TriangleBuilder build = new EquilateralTriangleBuilder
-            (new IsoscelesTriangleBuilder(new OrdinaryTriangleBuilder(null)));
+        TriangleBuilder build = new EquilateralTriangleBuilder(
+            new IsoscelesTriangleBuilder(new OrdinaryTriangleBuilder(null)));
         Triangle triangle = build.buildTriangle(sides);
         System.out.println(triangle.getTriangleType());
       } catch (IllegalTriangleException ex) {
