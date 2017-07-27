@@ -29,7 +29,7 @@ public class Personas {
    */
   public void setAge(String age) {
     this.age = age;
-    while (!(isAgeCorrect(age))) {
+    if (!(isAgeCorrect(age))) {
       throw new IllegalArgumentException();
     }
   }
