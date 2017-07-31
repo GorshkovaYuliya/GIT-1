@@ -6,7 +6,8 @@ import java.math.BigDecimal;
 public class EquilateralTriangle extends Triangle {
 
   /**
-   * Constructor.
+   * This method tries to create equilateral triangle
+   * if type is wrong calls an exception.
    * @param sides is triangles sides
    * @throws IllegalTriangleException if triangle can't be build
    * @throws IllegalTypeTriangleException if triangle is not equilateral
@@ -24,10 +25,7 @@ public class EquilateralTriangle extends Triangle {
    * @return true if triangle is equilateral, false otherwise
    */
   public boolean ExistEquilateralTriangle(BigDecimal[] sides) {
-    if (!((sides[0].compareTo(sides[1]) == 0) && ((sides[0].compareTo(sides[2]) == 0)))) {
-      return false;
-    }
-    return true;
+    return (((sides[0].compareTo(sides[1]) == 0) && ((sides[0].compareTo(sides[2]) == 0))));
   }
 
   @Override
