@@ -1,8 +1,7 @@
 import java.math.*;
 
 /**
- * This class checks if triangle is exist
- * and return
+ * This class checks if triangle is exist.
  */
 public class Triangle {
   private BigDecimal[] sides;
