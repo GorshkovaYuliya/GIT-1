@@ -6,7 +6,9 @@ import java.math.BigDecimal;
 public class IsoscelesTriangle extends Triangle {
 
   /**
-   * Constructor.
+   * This method tries to create equilateral triangle
+   * if type is wrong calls an exception.
+   *
    * @param sides is triangles sides
    * @throws IllegalTriangleException if triangle can't be build
    * @throws IllegalTypeTriangleException if triangle is not equilateral
@@ -24,11 +26,8 @@ public class IsoscelesTriangle extends Triangle {
    * @return true if triangle is isosceles, false otherwise
    */
   public boolean isExistIsoscelesTriangle(BigDecimal[] sides) {
-    if ((sides[0].compareTo(sides[1]) != 0) && (sides[1].compareTo(sides[2]) != 0) &&
-        ((sides[0].compareTo(sides[2]) != 0)) && (sides[2].compareTo(sides[1]) != 0)) {
-      return false;
-    }
-    return true;
+    return  (!((sides[0].compareTo(sides[1]) != 0) && (sides[1].compareTo(sides[2]) != 0) &&
+        ((sides[0].compareTo(sides[2]) != 0)) && (sides[2].compareTo(sides[1]) != 0)));
   }
 
   @Override
