@@ -3,7 +3,7 @@ import java.math.BigDecimal;
  * This class build triangle
  */
 abstract class TriangleBuilder {
-  protected TriangleBuilder successor;
+  private TriangleBuilder successor;
 
   public TriangleBuilder(){
     this.successor = successor;
