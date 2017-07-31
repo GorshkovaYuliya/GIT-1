@@ -12,9 +12,9 @@ public class EquilateralTriangle extends Triangle {
    * @throws IllegalTriangleException if triangle can't be build
    * @throws IllegalTypeTriangleException if triangle is not equilateral
    */
-  public isEquilateralTriangle(BigDecimal[] sides) throws IllegalTriangleException, IllegalTypeTriangleException {
+  public EquilateralTriangle(BigDecimal[] sides) throws IllegalTriangleException, IllegalTypeTriangleException {
     super(sides);
-    if (!ExistEquilateralTriangle(sides)) {
+    if (!isExistEquilateralTriangle(sides)) {
       throw new IllegalTypeTriangleException();
     }
   }
