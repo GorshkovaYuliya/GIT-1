@@ -8,7 +8,7 @@ public class Triangle {
   private BigDecimal[] sides;
 
   /**
-   * Constructor.
+   * This method tries to create triangle if values are right.
    * @param sidesOfTriangle is sides of triangle
    * @throws IllegalTriangleException if triangle is not exist
    */
@@ -32,7 +32,7 @@ public class Triangle {
   public boolean isExist(BigDecimal[] sidesOfTriangle) {
     if ((((sidesOfTriangle[0].add(sidesOfTriangle[1])).compareTo(sidesOfTriangle[2])) == - 1) ||
         (((sidesOfTriangle[0].add(sidesOfTriangle[2])).compareTo(sidesOfTriangle[1])) == - 1) ||
-        (((sidesOfTriangle[1].add(sidesOfTriangle[2])).compareTo(sidesOfTriangle[0])) == -1)) {
+        (((sidesOfTriangle[1].add(sidesOfTriangle[2])).compareTo(sidesOfTriangle[0])) == - 1)) {
       return false;
     }
     for (int i = 0; i < 3; i++ ) {
