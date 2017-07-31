@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 public class EquilateralTriangleBuilder extends TriangleBuilder {
 
   /**
-   * Constructor.
+   * This method set pointer on the next type.
    * @param successor points to the next type of triangle
    */
   public EquilateralTriangleBuilder(TriangleBuilder successor) {
