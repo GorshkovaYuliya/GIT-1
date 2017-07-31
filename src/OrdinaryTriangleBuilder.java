@@ -5,8 +5,8 @@ import java.math.BigDecimal;
  */
 public class OrdinaryTriangleBuilder extends TriangleBuilder {
   
-    /**
-   * Constructor.
+  /**
+   * * This method set pointer to the next type.
    * @param successor points to the next type of triangle
    */
   public OrdinaryTriangleBuilder(TriangleBuilder successor) {
