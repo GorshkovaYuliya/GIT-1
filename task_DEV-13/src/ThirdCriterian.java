@@ -49,20 +49,19 @@ public class ThirdCriterian extends Employees {
     seniorAmmount.add(maximumRatio);
     seniorAmmount.add(BigDecimal.ONE.divide(objectiveFunctionThroughFreeVariables.get(1)));
     seniorAmmount.add(objectiveFunctionThroughFreeVariables.get(1).divide(objectiveFunctionThroughFreeVariables.get(0),2, RoundingMode.HALF_UP));
-   // seniorAmmount.add(objectiveFunctionThroughFreeVariables.get(2).divide(objectiveFunctionThroughFreeVariables.get(0)));
     variableNumberZero.set(0,variableNumberZero.get(0).multiply(seniorAmmount.get(0)));
     variableNumberZero.set(1,variableNumberZero.get(0).multiply(seniorAmmount.get(1)));
     variableNumberZero.set(2,(variableNumberZero.get(0).multiply(seniorAmmount.get(2))).add(variableNumberZero.get(2)));
     BigDecimal optimalVariable = variableNumberZero.get(2);
     if(optimalVariable.compareTo(optimalVariable.setScale(0, RoundingMode.CEILING)) != 0) {
       BigDecimal optimalVariableMadeInteger = (optimalVariable.setScale(0, RoundingMode.CEILING)).subtract(BigDecimal.ONE);
-      BigDecimal finalObjectiveFunction =  ((objectiveFunction.get(0).multiply(BigDecimal.ONE))).add(objectiveFunction.get(1).multiply(optimalVariableMadeInteger));
+      BigDecimal finalObjectiveFunction = ((objectiveFunction.get(0).multiply(BigDecimal.ONE))).add(objectiveFunction.get(1).multiply(optimalVariableMadeInteger));
       result.add(BigDecimal.ONE);
       result.add(optimalVariableMadeInteger);
       result.add(finalObjectiveFunction);
       return result;
     }
-    BigDecimal finalObjectiveFunction =  ((objectiveFunction.get(0).multiply(BigDecimal.ZERO))).add(objectiveFunction.get(1).multiply(optimalVariable));
+    BigDecimal finalObjectiveFunction = ((objectiveFunction.get(0).multiply(BigDecimal.ZERO))).add(objectiveFunction.get(1).multiply(optimalVariable));
     result.add(BigDecimal.ZERO);
     result.add(optimalVariable);
     result.add(BigDecimal.ZERO);
