@@ -23,7 +23,7 @@ public class FirstCriterian  extends Employees {
   }
 
   /**
-   * This function solve a linear linear equation
+   * This function solve a linear equation
    * with one constraint with branch and bound algorithm
    * @param budget fixed budget
    * @param junior object type employees
