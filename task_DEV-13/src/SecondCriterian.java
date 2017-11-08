@@ -13,14 +13,6 @@ public class SecondCriterian extends Employees {
     super(employeesSalary, employeesProductivity);
   }
 
-  public int customerBudget(int budget ){
-    return budget;
-  }
-  public int customerDesiredProductivity(int customerProductivity) {
-
-    return customerProductivity;
-  }
-
   /**
    * This function solve a linear equation
    * with one constraint with branch and bound algorithm
