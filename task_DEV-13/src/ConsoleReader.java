@@ -4,6 +4,7 @@ import java.util.Scanner;
  * This class allows user to enter data from console.
  */
 public class ConsoleReader {
+  
   /**
    * This method request user to enter data from console.
    * @param output message to user.
