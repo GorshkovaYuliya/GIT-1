@@ -36,10 +36,10 @@ public class FirstCriterian  extends Employees {
   public ArrayList<BigDecimal> branchAndBoundMethodMaksimize(BigDecimal budget,Employees junior, Employees middle, Employees senior, Employees lead) {
     ArrayList<BigDecimal> result = new ArrayList<>();
     ArrayList<BigDecimal> objectiveFunctionThroughFreeVariables = new ArrayList<BigDecimal>(Collections.nCopies(4, BigDecimal.ZERO));
-      objectiveFunctionThroughFreeVariables.set(0, budget.divide( junior.getSalary()));
-      objectiveFunctionThroughFreeVariables.set(1, middle.getSalary().divide(junior.getSalary()));
-      objectiveFunctionThroughFreeVariables.set(2, senior.getSalary().divide(junior.getSalary()));
-      objectiveFunctionThroughFreeVariables.set(3, lead.getSalary().divide(junior.getSalary()));
+    objectiveFunctionThroughFreeVariables.set(0, budget.divide( junior.getSalary()));
+    objectiveFunctionThroughFreeVariables.set(1, middle.getSalary().divide(junior.getSalary()));
+    objectiveFunctionThroughFreeVariables.set(2, senior.getSalary().divide(junior.getSalary()));
+    objectiveFunctionThroughFreeVariables.set(3, lead.getSalary().divide(junior.getSalary()));
     ArrayList<BigDecimal> objectiveFunction = new ArrayList<BigDecimal>(Collections.nCopies(4, BigDecimal.ZERO));
     objectiveFunction.set(0,junior.getProductivity());
     objectiveFunction.set(1,middle.getProductivity());
@@ -57,7 +57,7 @@ public class FirstCriterian  extends Employees {
         maximumRatio = objectiveFunctionThroughFreeVariables.get(i);
       }
     }
-     ArrayList<BigDecimal> middleAmmount = new ArrayList<>();
+    ArrayList<BigDecimal> middleAmmount = new ArrayList<>();
     middleAmmount.add(maximumRatio);
     middleAmmount.add(BigDecimal.ONE.divide(objectiveFunctionThroughFreeVariables.get(1)));
     middleAmmount.add(objectiveFunctionThroughFreeVariables.get(2).divide(objectiveFunctionThroughFreeVariables.get(1)));
