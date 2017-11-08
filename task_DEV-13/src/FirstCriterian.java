@@ -9,17 +9,9 @@ import java.util.Collections;
  * solve the problem of productivity and distribution of workers
  */
 public class FirstCriterian  extends Employees {
-
+  
   public FirstCriterian(double employeesSalary, double employeesProductivity) {
     super(employeesSalary, employeesProductivity);
-  }
-
-  public int customerBudget(int budget ){
-    return budget;
-  }
-  public int customerDesiredProductivity(int customerProductivity) {
-
-    return customerProductivity;
   }
 
   /**
