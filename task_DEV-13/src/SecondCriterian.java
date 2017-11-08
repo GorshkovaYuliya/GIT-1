@@ -40,7 +40,7 @@ public class SecondCriterian extends Employees {
     variableNumberZero.set(2,(objectiveFunction.get(3).subtract(objectiveFunction.get(0).add(objectiveFunctionThroughFreeVariables.get(3)))));
     BigDecimal minimumVariableInArrayVariableNumberZero, minimumRatio;
     minimumVariableInArrayVariableNumberZero = variableNumberZero.get(0);
-   minimumRatio = objectiveFunctionThroughFreeVariables.get(0).divide(objectiveFunctionThroughFreeVariables.get(1),2, RoundingMode.HALF_UP) ;
+    minimumRatio = objectiveFunctionThroughFreeVariables.get(0).divide(objectiveFunctionThroughFreeVariables.get(1),2, RoundingMode.HALF_UP) ;
     for(int i = 1; i < 4; i++ ) {
       if (minimumVariableInArrayVariableNumberZero.compareTo(objectiveFunctionThroughFreeVariables.get(i)) == -1) {
         minimumRatio = objectiveFunctionThroughFreeVariables.get(i);
