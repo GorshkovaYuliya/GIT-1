@@ -23,7 +23,7 @@ public class FirstCriterian  extends Employees {
    * @param senior object type employees
    * @param lead object type employees
    * @return result, an array includes amount of every type
-   * of employees and minimized function
+   * of employees and maximized function
    */
   public ArrayList<BigDecimal> branchAndBoundMethodMaksimize(BigDecimal budget,Employees junior, Employees middle, Employees senior, Employees lead) {
     ArrayList<BigDecimal> result = new ArrayList<>();
