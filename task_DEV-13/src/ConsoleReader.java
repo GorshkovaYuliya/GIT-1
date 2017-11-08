@@ -7,7 +7,7 @@ public class ConsoleReader {
   /**
    * This method request user to enter data from console.
    * @param output message to user.
-   * @return  double data entered by user size.
+   * @return  double data entered by user
    */
   public double consoleReadDouble(String output) {
     Scanner scanner =  new Scanner(System.in);
@@ -20,7 +20,7 @@ public class ConsoleReader {
   /**
    * This method request user to enter data from console.
    * @param output message to user.
-   * @return integer data entered by user size.
+   * @return integer data entered by user
    */
   public int consoleReadInteger(String output) {
     Scanner scanner =  new Scanner(System.in);
