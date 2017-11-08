@@ -21,7 +21,17 @@ public class SecondCriterian extends Employees {
     return customerProductivity;
   }
 
-
+  /**
+   * This function solve a linear equation
+   * with one constraint with branch and bound algorithm
+   * @param productive fixed productivity
+   * @param junior object type employees
+   * @param middle object type employees
+   * @param senior object type employees
+   * @param lead object type employees
+   * @return result, an array includes amount of every type
+   * of employees and minimized function
+   */
   public ArrayList<BigDecimal> branchAndBoundMethodMinimize(BigDecimal productive, Employees junior, Employees middle, Employees senior, Employees lead) {
     ArrayList<BigDecimal> result = new ArrayList<>();
     ArrayList<BigDecimal> objectiveFunctionThroughFreeVariables = new ArrayList<BigDecimal>(Collections.nCopies(4, BigDecimal.ZERO));
